@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      max-width: 700px;
+      text-align: center;
+      line-height: 1.6;
+      position: relative;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    p {
+      margin: 10px 0;
+      font-size: 18px;
+      text-align: justify;
+    }
+    .slide {
+      display: none;
+    }
+    .slide.active {
+      display: block;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #2c3e50;
+      color: white;
+      cursor: pointer;
+      margin: 5px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #1abc9c;
+    }
+    /* Foto profil di paragraf */
+    .profile-pic {
+      float: left;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+    /* Barisan gambar horizontal */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+      flex-wrap: wrap; /* biar responsive kalau layar kecil */
+    }
+    .image-row img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- SLIDE 1 -->
+    <div class="slide active">
+      <h1>Introduce Myself!</h1>
+      <p>
+        <img src="candi.jpg" alt="My Photo" class="profile-pic">
+        Hello! My name is <b>Tika</b>, my full name is Nur Rahmatika Kamila Syam. 
+        I’m from Muaro Bungo Jambi, and I’m 19 years old. 
+        I am a student at the Islamic University in Jambi and my major is Information Systems.
+        My hobbies are traveling, eating, watching movies, and coding <i>(just kidding)</i>.
+      </p>
+      <div class="image-row">
+        <img src="jepang.jpg" alt="Foto 1">
+        <img src="makan.jpg" alt="Foto 2">
+        <img src="nonton.jpg" alt="Foto 3">
+        <img src="coding.jpg" alt="Foto 4">
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide">
+      <p>If you ask me one question: <i>“What are your activities every day?”</i> 
+      I would answer: every afternoon I play badminton with my dad and mom, because we have a yard at home.  
+      If you want to play badminton, I think you can come to my house and play with me, and I’ll wait for you! 
+      I have liked badminton since elementary school, and I think playing badminton makes my body healthy. 
+      That’s why I play it every day, Who knows, one day I’ll be a pro player <I>(xixixi).</I> But guys, I'm also sleeping, scrolling everyday, 
+    and then sleeping again <I>wkwk.</I></p>
+      <div class="image-row">
+        <img src="lapangan.jpg" alt="Badminton 1">
+        <img src="althop.jpg" alt="Badminton 2">
+        <img src="lap 1.jpg" alt="Badminton 3">
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="slide">
+      <p>And let me tell you, guys, I joined an English course because I want to improve my English speaking skills. 
+      I think English is important in my life and also for my future, like for getting a job or maybe even going abroad 
+      and my English is not very good, that’s why I decided to take it. 
+      Every Monday, Wednesday, and Friday I have my English class. 
+      I’m not alone, I join the class with my friends, they are Khalid, Arisa, and Aprian. 
+      And of course, I have a good teacher. His name is Mr. Ilhan, and he is very patient in teaching us during the class.
+      I'm very excited to join this class because I enjoy it and I understand the material given by Mr. Ilhan.
+      By the way, I found this course on TikTok. If you want to know more, you can click the picture below.</p>
+      <div class="image-row">
+        <a href="https://www.tiktok.com/@iniyuliant?_t=ZS-8zCftldpHtv&_r=1 target="_blank">
+          <img src="les.jpg" alt="English Class 1">
+        </a>
+        <img src="zoom.jpg" alt="English Class 2">
+        <img src="study.jpg" alt="English Class 3">
+        <a href="https://www.tiktok.com/@efeindonesia?_t=ZS-8zCfw4MviLf&_r=1"_blank">
+          <img src="EFE.jpg" alt="English Class 4">
+        </a>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="slide">
+      <p>By the way, my favorite foods are fried rice, noodle, and meatballs because I think they are delicious.  
+      My favorite drinks are iced tea and avocado juice, but I think they are a little bit too sweet. 
+      My favorite colors are blue, black, and brown. How about you? what's your favorite color?</p>
+      <p>I think this is enough. Thank you all, hope your day is great. ee you later!</p>
+      <div class="image-row">
+        <img src="nasgor.jpg" alt="Food 1">
+        <img src="makan.jpg" alt="Drink 1">
+        <img src="bakso.jpg" alt="Color 1">
+      </div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+      <button onclick="prevSlide()">Prev</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+  <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+
+  function nextSlide() {
+    if (currentSlide < slides.length - 1) { 
+      currentSlide++;
+      showSlide(currentSlide);
+    }
+  }
+
+  function prevSlide() {
+    if (currentSlide > 0) { 
+      currentSlide--;
+      showSlide(currentSlide);
+    }
+  }
+  </script>
+
+</body>
+</html>
